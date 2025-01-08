@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Listings</title>
+  
+<head>
+<style>
+   body {
+      background-image: url(pexels7.jpg);
+      -size: covebackgroundr;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin-top: 60px;
+      font-family: Arial, sans-serif;
+      color: #ffffff; 
+      background-size: cover;
+    }
+
+    
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #f4f4f4;
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+    }
+
+    
+    #job-listings {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      border-radius: 8px;
+    }
+
+    
+    .job-card {
+      background-color: #ffffff;
+      color: #333;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .job-card:hover {
+      transform: scale(1.02); 
+    }
+
+    .job-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .company-name {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .location {
+      font-size: 0.9rem;
+    }
+    #back{
+      background-color: #26a69a;      
+        color:#1995AD;
+        padding:  10px 15px;
+        text-decoration: none;
+        border-radius: 9px;
+        display: inline-block;
+        margin-left: 400px;
+        box-shadow: 20px 4px 10px rgba(0, 0, 0, 0.2)
+
+    }
+   #back:hover{
+    background-color: #1995AD;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+    
+        
+    }
+    #home{
+      color:#1995AD;
+      display:inline-block;
+      border-radius: 9px;
+      padding: 10px 15px;
+      background-color: #26a69a;
+      margin-left: 199px;
+      margin-top: 100px;
+      margin-right: 400px;
+    }
+    #home:hover{
+    background-color: #1995AD;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+    }
+  
+</style>
+<body>
+  <h1>Job Listings</h1>
+  <div id="job-listings"></div>
+  <script src="script.js"></script>
+  <div class="back" id="back">
+  <a href="post-job.html">Go to post job</a>
+</div>
+  <div class="home" id="home">
+  <a href="index.html">HOME</a>
+  </div>
+</body>
+</html>

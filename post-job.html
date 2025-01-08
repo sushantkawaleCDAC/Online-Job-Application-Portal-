@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post a Job</title>
+  
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image:url(pexels6.jpg) ;
+    size: covebackgroundr;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      size: 20%;
+      background-size: 100%;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input, textarea, button {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #26a69a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    background-color: #00796b;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+  }
+  #jobForm{
+    text-align: center;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    justify-items: left; 
+    /* align-items: center;     */
+    padding: 2px;
+    margin-left: 400px;
+    
+}
+#back{
+        background-color: #26a69a;
+        color:#1995AD;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 9px;
+        display: inline-block;
+        margin-left: 50px;
+ 
+}
+#back:hover{
+    background-color: #1995AD;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+    
+        
+}
+
+    #jobForm label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: lightcyan;
+    padding: 3px;
+    border-radius: 10px;
+
+    }
+    #jobForm label:hover{
+    background-color: #1995AD;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+
+    }
+    #jobForm input[type="text"],
+#jobForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+#jobForm textarea {
+    resize: vertical;
+    height: 100px;
+}
+h1{
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 10px;
+  background-color:  #26a69a;
+  display: inline-block;
+  border-radius: 10px;
+  /* padding: 12px; */
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  
+  
+  
+}
+
+h1:hover{
+  background-color: #00796b;
+   
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+  }
+  #home{
+    color:#1995AD;
+      display:inline-block;
+      border-radius: 9px;
+      padding: 10px 15px;
+      background-color: #26a69a;
+      margin-left: 10px;
+    }
+
+    #home:hover{
+    background-color: #1995AD;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.09);
+    }
+  
+
+</style>
+<body>
+
+
+  <h1>Post a Job</h1>
+  <div class="main" id="main">
+  <form id="jobForm">
+    
+    <label for="title">Job Title:</label>
+    <input type="text" id="title" required><br>
+    
+    <label for="company">Company:</label>
+    <input type="text" id="company" required><br>
+    
+    <label for="description">Job Description:</label>
+    <textarea id="description" required></textarea><br>
+    
+    <label for="location">Location:</label>
+    <input type="text" id="location" required><br>
+
+    <div class="btn" id="btn">
+    <button type="button" onclick="postJob()">Post Job</button>
+</div>
+</div>
+  </form>
+  <div class="back" id="back">
+  <a href="job-listings.html">Go to Job Listings</a>
+</div>
+<div class="home" id="home">
+  <a href="index.html">HOME</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
